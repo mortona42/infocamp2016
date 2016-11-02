@@ -1,0 +1,189 @@
+/*
+Theme Name:         InfoCamp
+Theme URI:          https://github.com/olefredrik/foundationpress.git
+Description:        FoundationPress is a WordPress starter theme based on Foundation 5 by Zurb
+Version:            1.0.0
+Author:             Erika Deal
+Author URI:         http://erikadeal.com/
+
+License:            MIT License
+License URI:        http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* ---------------------------------------------------------------------------- 
+  
+  The main styles for the InfoCamp theme are stored in app.css. However, to 
+  enable theme customization without a lot of extra code, overrides are
+  provided and documented here so that you can change the colors of key
+  elements without too much trouble.
+
+  The theme uses relatively few colors; the original values are:
+
+  light green: rgb(139,179,44);
+  dark green: rgb(77,112,40);
+  background: #f4f4f4;
+  light gray: #b2b2b2;
+  dark gray: #565656;
+  white: #fff;
+
+New theme values, based on logo:
+Background: dark green R=0 G=136 B=89 (#008858)
+Mountain: green-gray R=87 G=112 B=94 (#57705D)
+Snow cap: off-white R=242 G=244 B=242 (#F2F4F2)
+Trees: light green R=75 G=185 B=103 (#4AB867)
+Sun: orange R=227 G=63 B=37 (#E33F25)
+Waves: light blue R=69 G=158 B=216 (#449ED7)
+
+Background (off-white): R=242 G=244 B=242 (#F2F4F2)
+Dark Green: R=0 G=136 B=89 (#008858)
+Light Green: R=75 G=185 B=103 (#4AB867)
+Green-gray: R=87 G=112 B=94 (#57705D)
+Orange: R=227 G=63 B=37 (#E33F25)
+Light Blue: R=69 G=158 B=216 (#449ED7)
+Off-white: R=242 G=244 B=242 (#F2F4F2)
+
+  Table of Contents:
+    1. Typography
+    2. Header components
+    3. Content (page) components
+    4. Footer components
+
+---------------------------------------------------------------------------- */
+
+
+/**
+ *  1. Typography
+ * -----------------------------------
+ */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #57705D;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  color: #57705D;
+}
+
+a {
+  color: #4AB867;
+}
+
+a:hover, a:visited {
+  color: #008858;
+}
+
+/* Front page section headers */
+.section-title {
+  padding: 1em 0;
+  color: #57705D;
+}
+
+.section-title:before {
+    border-top: 1px solid #449ED7;
+    border-bottom: 1px solid #449ED7;
+}
+
+
+/**
+ * 2. Header elements
+ * -------------------------------------
+ */
+
+
+.top-bar .name h1 a {
+  color: #4AB867;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: $white;
+  color: #4AB867;
+}
+
+.top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+   background: $white;
+   color: #4AB867;
+}
+
+.container[role="banner"] {
+    background: url(/wp-content/uploads/2015/09/SeattleBanner_NewTheme2.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/**
+ * 3.0 Content
+ * ----------------------------------------------------------------------------
+ */
+
+.info-box h4 {
+  color: #4AB867;
+}
+
+@media screen and (min-width: 641px) {
+  .info-box {
+    border: 5px solid #4AB867;
+  }
+}
+
+/* The schedule table on landing page "Where" */
+@media (max-width: 767px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* The header banner on pages */
+
+.page-title{
+   background: #4AB867;
+}
+
+@media screen and (min-width: 641px) {
+  .page-title {
+      background: #4AB867 url(/wp-content/uploads/2015/09/Seattle_Small_NewTheme.png) no-repeat 75% 110%;
+      background-size: 350px;
+  }
+}
+
+/* The actual title text */
+.page-title .entry-title {
+  color: #F2F4F2;
+}
+
+
+/**
+ * 4. Landing page elements
+ *-------------------------------------
+ */
+
+.date-place h2 {
+  color: #4AB867;
+}
+
+/** Countdown Timer Styling **/
+
+ul.countdown li span {
+  color: #4AB867;
+  border: 2px solid #4AB867;
+}
+
+ul.countdown li span:after {
+  background: #4AB867;
+}
+#mgh-map {
+width:100%;
+}
+/**@media only screen and (max-width: 800px) {
+#mgh-map {
+max-width:800px;
+}
+}**/
