@@ -265,7 +265,7 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: #4A4A4A;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
@@ -278,6 +278,7 @@ h3,
 h4,
 h5,
 h6 {
+	color: #1E0D3E;
 	clear: both;
 	font-family: 'Roboto Slab', serif;
 }
@@ -511,17 +512,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #1A8DCD;
 }
 
 a:visited {
-	color: purple;
+	color: #6B2AC8;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #54B2E6;
 }
 
 a:focus {
@@ -558,6 +559,10 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+}
+
+.main-navigation a:visited {
+	color: #1A8DCD;
 }
 
 .main-navigation ul ul {
@@ -920,6 +925,8 @@ object {
 	width: 25%;
 }
 .site-footer {
+	background-color: #1E0D3E;
+	color: #A2ABB5;
 	clear: both;
 	width: 100%;
 }
@@ -928,7 +935,7 @@ object {
 	width: 100%;
 }
 
-.site-branding, #content, #colophon {margin: 2%}
+.site-branding, #content, #colophon {padding: 2%}
 
 /*  Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
