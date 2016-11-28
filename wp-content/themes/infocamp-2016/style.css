@@ -949,8 +949,8 @@ object {
 
 #content, #colophon {padding: 2%}
 
-/*  Mobile Layout - Below 800px */
-@media only screen and (max-width: 799px) {
+/*  Mobile Layout - Below 1000px */
+@media only screen and (max-width: 999px) {
 
 	.hero-img {
 		max-width: none;
