@@ -938,29 +938,9 @@ object {
 .site-branding, #content, #colophon {padding: 2%}
 
 /*  Tablet Layout: 768px. */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	.hfeed{}
-	.site-header{width:100%;padding:0 10%;}
-	.site-main{width:100%;padding:0;overflow:auto;}
-	.content-area{width:63%;padding:0;float:left;display:inline;}
-	.site-content .widget-area{width:35%;padding:0;float:right;display:inline;}
-	.site-footer{width:100%;padding:0;}
-}
-/*  Mobile Layout: 320px. */
-@media only screen and (max-width: 767px) {
-	.hfeed{width:100%;padding:0 10%;}
-	.site-header{width:100%;padding:0;}
-	.site-main{width:100%;padding:0;}
-	.content-area{width:100%;padding:0;}
-	.site-content .widget-area{width:100%;padding:0;}
-	.site-footer{width:100%;padding:0;}
-}
-/*  Wide Mobile Layout: 480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	.hfeed{width:100%;padding:0 10%;}
-	.site-header{width:100%;padding:0;}
-	.site-main{width:100%;padding:0;}
-	.content-area{width:100%;padding:0;}
-	.site-content .widget-area{width:100%;padding:0;}
-	.site-footer{width:100%;padding:0;}
+@media only screen and (max-width: 800px) {
+	.site-content .widget-area{
+		width:100%;
+		padding:0;
+	}
 }
