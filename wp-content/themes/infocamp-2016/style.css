@@ -935,11 +935,16 @@ object {
 	position: relative;
 }
 
-.site-header_overlay {
+.site-header_overlay_wrapper {
 	position: absolute;
 	top: 0;
-	padding: 10px;
-	margin: 10px;
+	width: 50%;
+	margin: 0 4%;
+}
+
+.site-header_overlay_content {
+	margin: 0 4%;
+	text-align: center;
 	background-color: white;
 }
 
@@ -949,6 +954,8 @@ object {
 
 #content, #colophon {padding: 2%}
 
+
+
 /*  Mobile Layout - Below 1000px */
 @media only screen and (max-width: 999px) {
 
@@ -957,7 +964,7 @@ object {
 		width: 1000px;
 	}
 
-	.site-header_overlay {
+	.site-header_overlay_wrapper {
 		width: 80%;
 		margin: 2% 10%;
 	}
