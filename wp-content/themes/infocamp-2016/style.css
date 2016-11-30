@@ -950,15 +950,20 @@ object {
 
 .site-header_overlay_wrapper {
 	position: absolute;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	top: 0;
+	height: 100%;
 	width: 50%;
-	margin: 0 4%;
 }
 
 .site-header_overlay_content {
-	margin: 0 4%;
 	text-align: center;
 	background-color: white;
+	margin: 4%;
 }
 
 .hero-img {
@@ -974,16 +979,23 @@ object {
 
 	.hero-img {
 		max-width: none;
-		width: 1000px;
+		width: 1200px;
+		text-align: right;
 	}
 
 	.site-header_overlay_wrapper {
 		width: 80%;
-		margin: 2% 10%;
+		margin: auto;
+		top: 0; left: 0; bottom: 0; right: 0;
 	}
 
 	.site-content .widget-area{
 		width:100%;
 		padding:0;
 	}
+}
+
+.absolutecentercontent .Absolute-Center.is-Variable {
+	display: table;
+	height: auto;
 }
