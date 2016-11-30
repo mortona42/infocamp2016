@@ -4,6 +4,9 @@
 
 ( function( $ ) {
 
-    $("#site-title").fitText();
+    $("#site-title").fitText(1);
+    $("#site-description").fitText(2);
+    $("#event-date").fitText(3);
+    $("#event-location").fitText(3);
 
 } )( jQuery );

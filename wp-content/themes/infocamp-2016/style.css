@@ -935,6 +935,19 @@ object {
 	position: relative;
 }
 
+#site-title {
+	margin: 0;
+}
+#site-title a {
+	text-decoration: none;
+}
+
+#site-description,
+#event-date,
+#event-location {
+	margin: 20px;
+}
+
 .site-header_overlay_wrapper {
 	position: absolute;
 	top: 0;
