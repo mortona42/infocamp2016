@@ -4,27 +4,32 @@
  **/
 ?>
 
+<?php get_template_part( 'template-parts/site-menu' ); ?>
+
 <header id="masthead" class="site-header" role="banner">
 
     <?php if ( get_header_image() ) : ?>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-            <img class='hero-img' src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
-        </a>
+        <img class='hero-img' src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
     <?php endif; // End header image check. ?>
 
     <div class="site-header_overlay_wrapper">
         <div class="site-header_overlay_content">
-            <div class="site-branding">
 
-                <h1 id="site-title" class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-                <?php
-                $description = get_bloginfo( 'description', 'display' );
-                if ( $description || is_customize_preview() ) : ?>
-                    <p id="site-description" class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-                    <?php
-                endif; ?>
-            </div><!-- .site-branding -->
+<!--                --><?php
+//                $description = get_bloginfo( 'description', 'display' );
+//                if ( $description || is_customize_preview() ) : ?>
+<!--                    <p id="site-description" class="site-description">--><?php //echo $description; /* WPCS: xss ok. */ ?><!--</p>-->
+<!--                    --><?php
+//                endif; ?>
+
+
+            <?php
+            if ( ! $event_location = get_theme_mod( 'event_description' )) {
+                $event_location = 'Configure description with the customizer.';
+            }
+            ?>
+            <div id="event-description"><?php echo $event_location; ?></div>
 
 
             <?php
@@ -52,8 +57,3 @@
     </div>
 
 </header><!-- #masthead -->
-
-<nav id="site-navigation" class="main-navigation" role="navigation">
-    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'infocamp-2016' ); ?></button>
-    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-</nav><!-- #site-navigation -->

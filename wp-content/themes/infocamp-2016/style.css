@@ -538,10 +538,11 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	display: flex;
+	max-width: 100%;
+	align-items: center;
+	margin: 0 1%;
+	justify-content: space-between;
 }
 
 .main-navigation ul {
@@ -554,6 +555,7 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+	margin-left: 20px;
 }
 
 .main-navigation a {
@@ -931,8 +933,19 @@ object {
 	width: 100%;
 }
 
+
+/*
+ * Customizations
+*/
+
 .site-header {
 	position: relative;
+	background-color: #00a0d2;
+	padding-top: 20px;
+}
+
+.hero-img {
+	float: right;
 }
 
 #site-title {
@@ -942,32 +955,64 @@ object {
 	text-decoration: none;
 }
 
-#site-description,
 #event-date,
 #event-location {
 	margin: 20px;
+	padding: 20px;
+	display: table;
+}
+
+
+#event-description {
+	margin: 20px;
+	display: table;
+}
+
+#event-date,
+#event-location {
+	background-color: white;
+}
+
+#event-description span {
+	display: block;
+	background-color: white;
+	padding: 10px 20px;
+	margin-top: 10px;
+}
+#event-description {
+	display: table;
+}
+
+#ed-1 {
+	margin-left: 2px;
+}
+#ed-2 {
+	margin-left: 8px;
+}
+#ed-3 {
+	margin-left: 20px;
+}
+#ed-4 {
+	margin-left: 12px;
 }
 
 .site-header_overlay_wrapper {
 	position: absolute;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
 	top: 0;
-	height: 100%;
-	width: 50%;
+
 }
 
 .site-header_overlay_content {
-	text-align: center;
-	background-color: white;
 	margin: 4%;
+	display: flex;
+	flex-direction: column;
 }
 
-.hero-img {
-	width: 100%;
+.site-header_overlay_content #site-title {
+	display: table;
+}
+.site-header_overlay_content #event-description span {
+
 }
 
 #content, #colophon {padding: 2%}
@@ -978,15 +1023,17 @@ object {
 @media only screen and (max-width: 999px) {
 
 	.hero-img {
-		max-width: none;
-		width: 1200px;
-		text-align: right;
+		padding-top: 300px;
+	}
+
+	.site-header_overlay_content {
+		flex-direction: column;
 	}
 
 	.site-header_overlay_wrapper {
-		width: 80%;
+		width: 100%;
 		margin: auto;
-		top: 0; left: 0; bottom: 0; right: 0;
+		top: 0;
 	}
 
 	.site-content .widget-area{

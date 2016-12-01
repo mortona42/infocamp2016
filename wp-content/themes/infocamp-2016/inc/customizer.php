@@ -22,6 +22,14 @@ function infocamp_2016_customize_register( $wp_customize ) {
         'priority'   => 2,
     ) );
 
+    $wp_customize->add_setting( 'event_description', array('default' => '') );
+    $wp_customize->add_control( 'event_description', array(
+        'label'     => __( 'Event Description', 'infocamp-2016' ),
+        'section'   => 'event_info',
+        'type'      => 'text',
+        'priority'  => 9
+    ) );
+
     $wp_customize->add_setting( 'event_date', array('default' => '') );
     $wp_customize->add_control( 'event_date', array(
         'label'     => __( 'Event Date', 'infocamp-2016' ),
