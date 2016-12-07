@@ -941,12 +941,11 @@ object {
 
 .site-header {
 	position: relative;
-	background-color: #00a0d2;
-	padding-top: 130px;
+	width: 100%;
 }
 
 .hero-img {
-	float: right;
+	width: 100%;
 }
 
 #site-title {
@@ -1018,14 +1017,14 @@ object {
 
 #content, #colophon {padding: 2%}
 
+#header-wrapper {
+	width: 1200px;
+	margin: auto;
+}
 
 
 /*  Mobile Layout - Below 1000px */
 @media only screen and (max-width: 999px) {
-
-	.hero-img {
-		padding-top: 300px;
-	}
 
 	.site-header_overlay_content {
 		flex-direction: column;
@@ -1041,9 +1040,21 @@ object {
 		width:100%;
 		padding:0;
 	}
+
+	.site-header {
+		overflow: hidden;
+		width: 120%;
+	}
 }
 
 .absolutecentercontent .Absolute-Center.is-Variable {
 	display: table;
 	height: auto;
+}
+
+/* Large Display - Above 1920px */
+@media only screen and (min-width: 1921px) {
+	#header-wrapper {
+		width: 1800px;
+	}
 }
