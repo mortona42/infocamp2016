@@ -574,6 +574,7 @@ a:active {
 	top: 1.5em;
 	left: -999em;
 	z-index: 99999;
+	background: white;
 }
 
 .main-navigation ul ul ul {
