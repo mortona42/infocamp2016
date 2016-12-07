@@ -32,7 +32,7 @@
                     $event_location = 'Configure description with the customizer.';
                 }
                 ?>
-                <div id="event-description"><?php echo $event_location; ?></div>
+                <span id="event-description"><?php echo $event_location; ?></span>
 
 
                 <?php
@@ -47,14 +47,14 @@
                     $event_date = 'Configure date with the customizer.';
                 }
                 ?>
-                <p id="event-date"><?php echo $event_date; ?></p>
+                <span id="event-date"><?php echo $event_date; ?></span>
 
                 <?php
                 if ( ! $event_location = get_theme_mod( 'event_location' )) {
                     $event_location = 'Configure location with the customizer.';
                 }
                 ?>
-                <p id="event-location"><?php echo $event_location; ?></p>
+                <span id="event-location"><?php echo $event_location; ?></span>
 
             </div>
         </div>

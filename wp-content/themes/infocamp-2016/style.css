@@ -957,22 +957,24 @@ object {
 	text-decoration: none;
 }
 
-#event-date,
-#event-location {
+#header-wrapper {
+	width: 1200px;
+	margin: auto;
+}
+
+.site-header_overlay_content span {
 	margin: 20px;
 	padding: 20px;
-	display: table;
+	background-color: white;
 }
 
 
 #event-description {
 	margin: 20px;
-	display: table;
 }
 
 #event-date,
 #event-location {
-	background-color: white;
 }
 
 #event-description span {
@@ -980,9 +982,6 @@ object {
 	background-color: white;
 	padding: 10px 20px;
 	margin-top: 10px;
-}
-#event-description {
-	display: table;
 }
 
 .site-header_overlay_wrapper {
@@ -995,21 +994,10 @@ object {
 	margin: 4%;
 	display: flex;
 	flex-direction: column;
-}
-
-.site-header_overlay_content #site-title {
-	display: table;
-}
-.site-header_overlay_content #event-description span {
-
+	align-items: flex-start;
 }
 
 #content, #colophon {padding: 2%}
-
-#header-wrapper {
-	width: 1200px;
-	margin: auto;
-}
 
 
 /*  Mobile Layout - Below 1000px */
