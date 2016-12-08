@@ -997,7 +997,20 @@ object {
 	align-items: flex-start;
 }
 
-#content, #colophon {padding: 2%}
+#content {
+	max-width: 1200px;
+	margin: auto;
+	padding: 2%
+}
+
+#colophon {
+	padding: 2%;
+}
+
+.site-info {
+	max-width: 1200px;
+	margin: auto;
+}
 
 
 /*  Mobile Layout - Below 1000px */
