@@ -19,6 +19,26 @@ body {
 .main-navigation li {
     margin-left: 10px;
 }
+@media only screen and (max-width: 599px) {
+    #primary-menu {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    ul.nav-menu {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    ul.nav-menu li {
+        float: none;
+        padding: 10px 0;
+    }
+}
 
 .site-description {
     font-size: 32px;

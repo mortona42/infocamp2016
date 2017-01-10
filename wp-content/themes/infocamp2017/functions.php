@@ -109,6 +109,7 @@ function infocamp2017_scripts() {
     wp_enqueue_style( 'infocamp2017-style-custom', get_template_directory_uri() . '/custom.css' );
 
     wp_enqueue_style( 'infocamp2017-fonts-roboto', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Slab:400,700' );
+    wp_enqueue_script( 'infocamp2017-font-awesome', 'https://use.fontawesome.com/1ec6b8b1a8.js' );
 
 	wp_enqueue_script( 'infocamp2017-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
