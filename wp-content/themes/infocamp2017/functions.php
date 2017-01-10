@@ -106,6 +106,7 @@ add_action( 'widgets_init', 'infocamp2017_widgets_init' );
  */
 function infocamp2017_scripts() {
 	wp_enqueue_style( 'infocamp2017-style', get_stylesheet_uri() );
+    wp_enqueue_style( 'infocamp2017-style-custom', get_template_directory_uri() . '/custom.css' );
 
 	wp_enqueue_script( 'infocamp2017-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
