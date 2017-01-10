@@ -40,7 +40,7 @@
     <?php
     $description = get_bloginfo( 'description', 'display' );
     if ( $description || is_customize_preview() ) : ?>
-        <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+        <span class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></span>
         <?php
     endif; ?>
 	</header><!-- #masthead -->

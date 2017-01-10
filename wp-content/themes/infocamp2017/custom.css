@@ -9,6 +9,13 @@ body {
     padding: 0 1%;
     float: none;
 }
+.site-description {
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 0;
+    box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
+}
 
 /*--------------------------------------------------------------
 # Typography
