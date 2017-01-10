@@ -1,20 +1,34 @@
 body {
     background: #b1dcf0;
 }
-#site-navigation {
+#navigation-wrapper {
+    width: 100%;
     background: white;
+}
+
+#site-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1%;
     float: none;
+    max-width: 1000px;
+    margin: auto;
 }
+
 .site-description {
     font-size: 32px;
     font-weight: bold;
+    margin: 0 22%;
+}
+
+.site-description span {
     background-color: #fff;
-    padding: 0;
     box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
+}
+
+#content {
+    max-width: 800px;
+    margin: auto;
 }
 
 /*--------------------------------------------------------------
