@@ -1,6 +1,11 @@
 body {
     background: #b1dcf0;
 }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
 #navigation-wrapper {
     width: 100%;
     background: white;
@@ -19,6 +24,7 @@ body {
 .main-navigation li {
     margin-left: 10px;
 }
+
 @media only screen and (max-width: 599px) {
     #primary-menu {
         position: absolute;
@@ -27,6 +33,7 @@ body {
         height: 100%;
         width: 100%;
     }
+
     ul.nav-menu {
         background-color: white;
         height: 100%;
@@ -34,11 +41,20 @@ body {
         margin: auto;
         text-align: center;
     }
+
     ul.nav-menu li {
         float: none;
         padding: 10px 0;
     }
+
+    body.menu-toggled {
+        overflow: hidden;
+    }
 }
+
+/*--------------------------------------------------------------
+# Description
+--------------------------------------------------------------*/
 
 .site-description {
     font-size: 32px;
@@ -52,6 +68,10 @@ body {
     background-color: #fff;
     box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
 }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
 
 #content {
     max-width: 800px;
