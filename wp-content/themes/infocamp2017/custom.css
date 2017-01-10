@@ -16,6 +16,10 @@ body {
     margin: auto;
 }
 
+.main-navigation li {
+    margin-left: 10px;
+}
+
 .site-description {
     font-size: 32px;
     font-weight: bold;
