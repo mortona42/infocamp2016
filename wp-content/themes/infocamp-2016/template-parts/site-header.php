@@ -14,26 +14,15 @@
     <div id="header-wrapper">
 
         <div class="site-header_overlay_wrapper">
+            <?php
+            $description = get_bloginfo( 'description', 'display' );
+            if ( $description || is_customize_preview() ) : ?>
+                <span id="site-description" class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></span>
+                <?php
+            endif; ?>
 
 
             <div class="site-header_overlay_content">
-
-
-    <!--                --><?php
-    //                $description = get_bloginfo( 'description', 'display' );
-    //                if ( $description || is_customize_preview() ) : ?>
-    <!--                    <p id="site-description" class="site-description">--><?php //echo $description; /* WPCS: xss ok. */ ?><!--</p>-->
-    <!--                    --><?php
-    //                endif; ?>
-
-
-                <?php
-                if ( ! $event_location = get_theme_mod( 'event_description' )) {
-                    $event_location = 'Configure description with the customizer.';
-                }
-                ?>
-                <div id="event-description"><span><?php echo $event_location; ?></span></div>
-
 
                 <?php
                 if ( get_theme_mod( 'event_date' )) {
@@ -56,6 +45,12 @@
                 ?>
                 <div id="event-location"><?php echo $event_location; ?></div>
 
+                <?php
+                if ( ! $event_location = get_theme_mod( 'event_description' )) {
+                    $event_location = 'Configure description with the customizer.';
+                }
+                ?>
+                <div id="event-description"><p><?php echo $event_location; ?></p></div>
             </div>
         </div>
     </div>

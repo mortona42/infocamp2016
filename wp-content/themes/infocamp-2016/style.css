@@ -938,12 +938,12 @@ object {
 /*
  * Customizations
 */
+body {
+	background: #b1dcf0;
+}
 
 .site-header {
-	position: relative;
 	width: 100%;
-	padding-top: 200px;
-	background: #b1dcf0;
 }
 
 .hero-img {
@@ -967,22 +967,21 @@ object {
 .site-header_overlay_content {
 	color: #1E0D3E;
 	font-family: 'Roboto Slab', serif;
-	margin: 65px 50px 0 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
 }
 
-#event-description {
+#site-description {
+	color: black;
 	font-size: 32px;
 	font-weight: bold;
-	margin-bottom: .8em;
-}
-
-#event-description span {
 	background-color: #fff;
 	padding: 0;
 	box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
+}
+
+#event-description {
+	background-color: white;
+	float: right;
+	width: 70%;
 }
 
 #event-date,
@@ -992,8 +991,6 @@ object {
 
 
 .site-header_overlay_wrapper {
-	position: absolute;
-	top: 0;
 	width: 70%;
 }
 
@@ -1031,7 +1028,6 @@ object {
 
 	.site-header_overlay_content {
 		flex-direction: column;
-		margin: 60px 30px;
 	}
 
 	.site-header_overlay_wrapper {
@@ -1047,7 +1043,6 @@ object {
 
 	.site-header {
 		width: 100%;
-		padding-top: 400px;
 	}
 
 	#page {
