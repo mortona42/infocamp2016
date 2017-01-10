@@ -47,6 +47,37 @@
         </div>
         <?php
     endif; ?>
+
+    <div class="event-details">
+        <?php
+        if ( get_theme_mod( 'event_date' )) {
+            $event_date = get_theme_mod( 'event_date');
+
+            // Convert date format.
+            $event_date = date_create_from_format('Y-m-d', $event_date);
+            $event_date = $event_date->format('F j, Y');
+        }
+        else {
+            $event_date = 'Configure date with the customizer.';
+        }
+        ?>
+        <div id="event-date"><?php echo $event_date; ?></div>
+
+        <?php
+        if ( ! $event_location = get_theme_mod( 'event_location' )) {
+            $event_location = 'Configure location with the customizer.';
+        }
+        ?>
+        <div id="event-location"><?php echo $event_location; ?></div>
+
+        <?php
+        if ( ! $event_location = get_theme_mod( 'event_description' )) {
+            $event_location = 'Configure description with the customizer.';
+        }
+        ?>
+        <div id="event-description"><p><?php echo $event_location; ?></p></div>
+    </div>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

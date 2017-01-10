@@ -5,6 +5,10 @@ body {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.site-title a {
+    color: #1E0D3E;
+    text-decoration: none
+}
 
 #navigation-wrapper {
     width: 100%;
@@ -67,6 +71,12 @@ body {
 .site-description span {
     background-color: #fff;
     box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
+}
+
+.event-details {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px;
 }
 
 /*--------------------------------------------------------------

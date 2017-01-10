@@ -14,6 +14,37 @@ function infocamp2017_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+
+
+    // Event info section
+    $wp_customize->add_section( 'event_info' , array(
+        'title'      => __( 'Event Info', 'infocamp-2016' ),
+        'priority'   => 2,
+    ) );
+
+    $wp_customize->add_setting( 'event_date', array('default' => '') );
+    $wp_customize->add_control( 'event_date', array(
+        'label'     => __( 'Event Date', 'infocamp-2016' ),
+        'section'   => 'event_info',
+        'type'      => 'date',
+        'priority'  => 10
+    ) );
+
+    $wp_customize->add_setting( 'event_location', array('default' => '') );
+    $wp_customize->add_control( 'event_location', array(
+        'label'     => __( 'Event Location', 'infocamp-2016' ),
+        'section'   => 'event_info',
+        'type'      => 'text',
+        'priority'  => 11
+    ) );
+
+    $wp_customize->add_setting( 'event_description', array('default' => '') );
+    $wp_customize->add_control( 'event_description', array(
+        'label'     => __( 'Event Description', 'infocamp-2016' ),
+        'section'   => 'event_info',
+        'type'      => 'text',
+        'priority'  => 9
+    ) );
 }
 add_action( 'customize_register', 'infocamp2017_customize_register' );
 
