@@ -4,6 +4,7 @@ body {
 #navigation-wrapper {
     width: 100%;
     background: white;
+    padding: 0 20px;
 }
 
 #site-navigation {
@@ -18,7 +19,9 @@ body {
 .site-description {
     font-size: 32px;
     font-weight: bold;
-    margin: 0 22%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 .site-description span {
@@ -29,6 +32,7 @@ body {
 #content {
     max-width: 800px;
     margin: auto;
+    padding: 0 20px;
 }
 
 /*--------------------------------------------------------------
