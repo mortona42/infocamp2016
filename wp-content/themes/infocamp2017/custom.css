@@ -9,3 +9,24 @@ body {
     padding: 0 1%;
     float: none;
 }
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+    color: #4A4A4A;
+    font-family: 'Open Sans', sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1E0D3E;
+    font-family: 'Roboto Slab', serif;
+}

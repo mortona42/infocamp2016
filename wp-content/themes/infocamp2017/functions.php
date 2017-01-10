@@ -108,6 +108,8 @@ function infocamp2017_scripts() {
 	wp_enqueue_style( 'infocamp2017-style', get_stylesheet_uri() );
     wp_enqueue_style( 'infocamp2017-style-custom', get_template_directory_uri() . '/custom.css' );
 
+    wp_enqueue_style( 'infocamp2017-fonts-roboto', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Slab:400,700' );
+
 	wp_enqueue_script( 'infocamp2017-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'infocamp2017-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
