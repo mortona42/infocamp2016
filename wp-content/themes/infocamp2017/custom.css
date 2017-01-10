@@ -31,6 +31,11 @@ body {
 .main-navigation li {
     margin-left: 10px;
 }
+@media only screen and (max-width: 799px) {
+    .site-title a {
+        font-size: 1.5em;
+    }
+}
 
 @media only screen and (max-width: 599px) {
     #primary-menu {
@@ -39,6 +44,10 @@ body {
         left: 0;
         height: 100%;
         width: 100%;
+    }
+
+    body.admin-bar #primary-menu {
+        top: 122px;
     }
 
     ul.nav-menu {
@@ -64,11 +73,19 @@ body {
 --------------------------------------------------------------*/
 
 .site-description {
-    font-size: 32px;
+    font-size: 1.9em;
     font-weight: bold;
     max-width: 900px;
     margin: 20px auto;
     padding: 0 20px;
+}
+@media only screen and (max-width: 799px) {
+    .site-title a {
+        font-size: 1.5em;
+    }
+    .site-description {
+        font-size: 1.4em;
+    }
 }
 
 .site-description span {
