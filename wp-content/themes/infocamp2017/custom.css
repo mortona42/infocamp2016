@@ -12,14 +12,17 @@ body {
 # Navigation
 --------------------------------------------------------------*/
 .site-title {
-    color: #1E0D3E;
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
     font-size: 2em;
 }
 
-.site-title a {
+.site-title a:link,
+.site-title a:visited,
+.site-title a:hover,
+.site-title a:active {
     text-decoration: none;
+    color: #1E0D3E;
 }
 
 #navigation-wrapper {
@@ -39,6 +42,13 @@ body {
 
 .main-navigation li {
     margin-left: 10px;
+}
+.main-navigation a:link,
+.main-navigation a:visited,
+.main-navigation a:hover,
+.main-navigation a:active {
+    text-decoration: none;
+    color: #1E0D3E;
 }
 @media only screen and (min-width: 600px) and (max-width: 799px) {
     .site-title {
