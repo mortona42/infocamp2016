@@ -1,0 +1,136 @@
+body {
+    background: #b1dcf0;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+.site-title a {
+    color: #1E0D3E;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+#navigation-wrapper {
+    width: 100%;
+    background: white;
+    padding: 0 20px;
+}
+
+#site-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: none;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main-navigation li {
+    margin-left: 10px;
+}
+@media only screen and (max-width: 799px) {
+    .site-title a {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    #menu-wrapper {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    #primary-menu {
+        position: absolute;
+    }
+
+    body.admin-bar #menu-wrapper {
+        top: 122px;
+    }
+
+    ul.nav-menu {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    ul.nav-menu li {
+        float: none;
+        padding: 10px 0;
+    }
+
+    body.menu-toggled {
+        overflow: hidden;
+    }
+}
+
+/*--------------------------------------------------------------
+# Description
+--------------------------------------------------------------*/
+
+.site-description {
+    font-size: 1.9em;
+    font-weight: bold;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+@media only screen and (max-width: 799px) {
+    .site-title a {
+        font-size: 1.5em;
+    }
+    .site-description {
+        font-size: 1.4em;
+    }
+}
+
+.site-description span {
+    background-color: #fff;
+    box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
+}
+
+.event-details {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+#content {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+    color: #4A4A4A;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1E0D3E;
+    font-family: 'Roboto Slab', serif;
+}
