@@ -5,12 +5,15 @@ body {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.site-title a {
+.site-title {
     color: #1E0D3E;
-    text-decoration: none;
-    font-size: 2em;
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+}
+
+.site-title a {
+    text-decoration: none;
 }
 
 #navigation-wrapper {
@@ -31,13 +34,17 @@ body {
 .main-navigation li {
     margin-left: 10px;
 }
-@media only screen and (max-width: 799px) {
-    .site-title a {
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+    .site-title {
         font-size: 1.5em;
     }
 }
 
 @media only screen and (max-width: 599px) {
+    .site-title {
+        font-size: 1.3em;
+    }
+
     #menu-wrapper {
         position: absolute;
         top: 64px;
@@ -84,9 +91,6 @@ body {
     padding: 0 20px;
 }
 @media only screen and (max-width: 799px) {
-    .site-title a {
-        font-size: 1.5em;
-    }
     .site-description {
         font-size: 1.4em;
     }
