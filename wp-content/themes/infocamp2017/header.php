@@ -60,24 +60,32 @@
             $event_date = $event_date->format('F j, Y');
         }
         else {
-            $event_date = 'Configure date with the customizer.';
+            $event_date = __( 'Configure date with the customizer.', 'infocamp-2017' );
         }
         ?>
         <div id="event-date"><?php echo $event_date; ?></div>
 
         <?php
         if ( ! $event_location = get_theme_mod( 'event_location' )) {
-            $event_location = 'Configure location with the customizer.';
+            $event_location = __( 'Configure location with the customizer.', 'infocamp-2017' );
         }
         ?>
-        <div id="event-location"><?php echo $event_location; ?></div>
+        <div id="event-location"><p><?php echo $event_location; ?></p></div>
 
         <?php
-        if ( ! $event_location = get_theme_mod( 'event_description' )) {
-            $event_location = 'Configure description with the customizer.';
+        if ( ! $registration_url = get_theme_mod( 'registration_url' )) {
+            $registration_url = '/';
+        }
+        if ( ! $registration_button = get_theme_mod( 'registration_button' )) {
+            $registration_button = __('Register', 'infocamp-2017');
         }
         ?>
-        <div id="event-description"><p><?php echo $event_location; ?></p></div>
+        <div id="event-registration">
+            <form action="<?php echo $registration_url; ?>">
+                <input type="submit" value="<?php echo $registration_button; ?>" />
+            </form>
+        </div>
+
     </div>
 
 	</header><!-- #masthead -->

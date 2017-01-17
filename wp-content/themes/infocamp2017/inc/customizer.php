@@ -18,33 +18,42 @@ function infocamp2017_customize_register( $wp_customize ) {
 
     // Event info section
     $wp_customize->add_section( 'event_info' , array(
-        'title'      => __( 'Event Info', 'infocamp-2016' ),
-        'priority'   => 2,
+        'title'      => __( 'Event Info', 'infocamp-2017' ),
+        'priority'   => 1,
     ) );
 
     $wp_customize->add_setting( 'event_date', array('default' => '') );
     $wp_customize->add_control( 'event_date', array(
-        'label'     => __( 'Event Date', 'infocamp-2016' ),
+        'label'     => __( 'Event Date', 'infocamp-2017' ),
         'section'   => 'event_info',
         'type'      => 'date',
-        'priority'  => 10
+        'priority'  => 1
     ) );
 
     $wp_customize->add_setting( 'event_location', array('default' => '') );
     $wp_customize->add_control( 'event_location', array(
-        'label'     => __( 'Event Location', 'infocamp-2016' ),
+        'label'     => __( 'Event Location', 'infocamp-2017' ),
         'section'   => 'event_info',
         'type'      => 'text',
-        'priority'  => 11
+        'priority'  => 2
     ) );
 
-    $wp_customize->add_setting( 'event_description', array('default' => '') );
-    $wp_customize->add_control( 'event_description', array(
-        'label'     => __( 'Event Description', 'infocamp-2016' ),
+    $wp_customize->add_setting( 'registration_url', array('default' => '') );
+    $wp_customize->add_control( 'registration_url', array(
+        'label'     => __( 'Registration URL', 'infocamp-2017' ),
         'section'   => 'event_info',
         'type'      => 'text',
-        'priority'  => 9
+        'priority'  => 3
     ) );
+
+    $wp_customize->add_setting( 'registration_button', array('default' => '') );
+    $wp_customize->add_control( 'registration_button', array(
+        'label'     => __( 'Registration button label', 'infocamp-2017' ),
+        'section'   => 'event_info',
+        'type'      => 'text',
+        'priority'  => 4
+    ) );
+
 }
 add_action( 'customize_register', 'infocamp2017_customize_register' );
 
