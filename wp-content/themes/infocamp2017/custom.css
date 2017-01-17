@@ -2,18 +2,25 @@ body {
     background: #b1dcf0;
 }
 
+#primary {
+    margin-bottom: 50%;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 .site-title {
-    color: #1E0D3E;
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
     font-size: 2em;
 }
 
-.site-title a {
+.site-title a:link,
+.site-title a:visited,
+.site-title a:hover,
+.site-title a:active {
     text-decoration: none;
+    color: #1E0D3E;
 }
 
 #navigation-wrapper {
@@ -31,8 +38,23 @@ body {
     margin: auto;
 }
 
+#site-navigation button {
+    background: none;
+    border: none;
+    font-size: 140%;
+    padding: 6px 9px 6px 9px;
+    margin-right: -9px;
+}
+
 .main-navigation li {
     margin-left: 10px;
+}
+.main-navigation a:link,
+.main-navigation a:visited,
+.main-navigation a:hover,
+.main-navigation a:active {
+    text-decoration: none;
+    color: #1E0D3E;
 }
 @media only screen and (min-width: 600px) and (max-width: 799px) {
     .site-title {
@@ -43,6 +65,7 @@ body {
 @media only screen and (max-width: 599px) {
     .site-title {
         font-size: 1.3em;
+        margin-bottom: 1em;
     }
 
     #menu-wrapper {
