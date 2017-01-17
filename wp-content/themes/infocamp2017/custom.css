@@ -167,6 +167,11 @@ input.event-registration-button:hover {
     color: white;
 }
 
+#event-participate {
+    background-color: white;
+
+}
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/

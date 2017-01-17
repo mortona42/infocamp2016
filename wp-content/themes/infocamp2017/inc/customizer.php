@@ -117,6 +117,22 @@ function infocamp2017_customize_register( $wp_customize ) {
         'priority'  => 7,
     ) );
 
+    $wp_customize->add_setting( 'twitter_url', array('default' => '') );
+    $wp_customize->add_control( 'twitter_url', array(
+        'label'     => __( 'Twitter URL', 'infocamp-2017' ),
+        'section'   => 'event_copy',
+        'type'      => 'text',
+        'priority'  => 8,
+    ) );
+
+    $wp_customize->add_setting( 'facebook_url', array('default' => '') );
+    $wp_customize->add_control( 'facebook_url', array(
+        'label'     => __( 'Facebook URL', 'infocamp-2017' ),
+        'section'   => 'event_copy',
+        'type'      => 'text',
+        'priority'  => 9,
+    ) );
+
 }
 add_action( 'customize_register', 'infocamp2017_customize_register' );
 

@@ -36,6 +36,34 @@ get_header(); ?>
                         <p><?php echo $about_copy; ?></p>
                     </div>
                 </section>
+
+                <?php
+                $participate_header = get_theme_mod( 'participate_header' );
+                $participate_copy = get_theme_mod( 'participate_copy' );
+
+                $twitter_url = get_theme_mod( 'twitter_url' );
+                $facebook_url = get_theme_mod( 'facebook_url' );
+                ?>
+                <section id="event-participate">
+                    <div class="front-page-section_wrapper">
+                        <h2><?php echo $participate_header; ?></h2>
+                        <p><?php echo $participate_copy; ?></p>
+
+                        <ul class="event-participate_list">
+                            <li>
+                                <form action="<?php echo $twitter_url; ?>">
+                                    <input class="event-registration-button" type="submit" value="twitter" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="<?php echo $facebook_url; ?>">
+                                    <input class="event-registration-button" type="submit" value="facebook" />
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
             </div>
             </div>
 
