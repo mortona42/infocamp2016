@@ -16,24 +16,24 @@ function infocamp2017_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 
-    // Event info section
-    $wp_customize->add_section( 'event_info' , array(
-        'title'      => __( 'Event Info', 'infocamp-2017' ),
+    // Event details section
+    $wp_customize->add_section( 'event_details' , array(
+        'title'      => __( 'Event Details', 'infocamp-2017' ),
         'priority'   => 1,
     ) );
 
     $wp_customize->add_setting( 'event_date', array('default' => '') );
     $wp_customize->add_control( 'event_date', array(
-        'label'     => __( 'Event Date', 'infocamp-2017' ),
-        'section'   => 'event_info',
+        'label'     => __( 'Event date', 'infocamp-2017' ),
+        'section'   => 'event_details',
         'type'      => 'date',
         'priority'  => 1
     ) );
 
     $wp_customize->add_setting( 'event_location', array('default' => '') );
     $wp_customize->add_control( 'event_location', array(
-        'label'     => __( 'Event Location', 'infocamp-2017' ),
-        'section'   => 'event_info',
+        'label'     => __( 'Event location', 'infocamp-2017' ),
+        'section'   => 'event_details',
         'type'      => 'text',
         'priority'  => 2
     ) );
@@ -41,7 +41,7 @@ function infocamp2017_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'registration_url', array('default' => '') );
     $wp_customize->add_control( 'registration_url', array(
         'label'     => __( 'Registration URL', 'infocamp-2017' ),
-        'section'   => 'event_info',
+        'section'   => 'event_details',
         'type'      => 'text',
         'priority'  => 3
     ) );
@@ -49,9 +49,72 @@ function infocamp2017_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'registration_button', array('default' => '') );
     $wp_customize->add_control( 'registration_button', array(
         'label'     => __( 'Registration button label', 'infocamp-2017' ),
-        'section'   => 'event_info',
+        'section'   => 'event_details',
         'type'      => 'text',
         'priority'  => 4
+    ) );
+
+    // Event copy
+    $wp_customize->add_section( 'event_copy' , array(
+        'title'      => __( 'Event Copy', 'infocamp-2017' ),
+        'priority'   => 2,
+    ) );
+
+
+    $wp_customize->add_setting( 'theme_header', array('default' => '') );
+    $wp_customize->add_control( 'theme_header', array(
+        'label'     => __( 'Theme header', 'infocamp-2017' ),
+        'section'   => 'event_copy',
+        'type'      => 'text',
+        'priority'  => 1,
+    ) );
+
+    $wp_customize->add_setting( 'theme', array('default' => '') );
+    $wp_customize->add_control( 'theme', array(
+        'label'     => __( 'Theme', 'infocamp-2017' ),
+        'section'   => 'event_copy',
+        'type'      => 'text',
+        'priority'  => 2,
+    ) );
+
+    $wp_customize->add_setting( 'theme_copy', array('default' => '') );
+    $wp_customize->add_control( 'theme_copy', array(
+        'label'     => __( 'Theme copy', 'infocamp-2017' ),
+        'section'   => 'event_copy',
+        'type'      => 'textarea',
+        'priority'  => 3,
+    ) );
+
+    $wp_customize->add_setting( 'about_header', array('default' => '') );
+    $wp_customize->add_control( 'about_header', array(
+        'label'     => __( 'About header', 'infocamp-2017' ),
+        'section'   => 'event_copy',
+        'type'      => 'text',
+        'priority'  => 4,
+    ) );
+
+    $wp_customize->add_setting( 'about_copy', array('default' => '') );
+    $wp_customize->add_control( 'about_copy', array(
+        'label'     => __( 'About copy', 'infocamp-2017' ),
+        'section'   => 'event_copy',
+        'type'      => 'textarea',
+        'priority'  => 5,
+    ) );
+
+    $wp_customize->add_setting( 'participate_header', array('default' => '') );
+    $wp_customize->add_control( 'participate_header', array(
+        'label'     => __( 'Participation header', 'infocamp-2017' ),
+        'section'   => 'event_copy',
+        'type'      => 'text',
+        'priority'  => 6,
+    ) );
+
+    $wp_customize->add_setting( 'participate_copy', array('default' => '') );
+    $wp_customize->add_control( 'participate_copy', array(
+        'label'     => __( 'Participation copy', 'infocamp-2017' ),
+        'section'   => 'event_copy',
+        'type'      => 'textarea',
+        'priority'  => 7,
     ) );
 
 }

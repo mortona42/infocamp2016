@@ -143,13 +143,35 @@ input.event-registration-button:hover {
 }
 
 /*--------------------------------------------------------------
+# Event Copy
+--------------------------------------------------------------*/
+#front-page-sections section {
+    padding: 20px 0;
+}
+#front-page-sections .front-page-section_wrapper {
+    max-width: 900px;
+    margin: auto;
+}
+
+#event-theme {
+    text-align: center;
+    background-color: white;
+}
+
+#event-about {
+    color: white;
+    background-color: #0A246A;
+}
+
+#event-about h2 {
+    color: white;
+}
+
+/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 
 #content {
-    max-width: 800px;
-    margin: auto;
-    padding: 0 20px;
 }
 
 /*--------------------------------------------------------------
