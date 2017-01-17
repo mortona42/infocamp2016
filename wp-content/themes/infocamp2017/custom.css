@@ -88,7 +88,7 @@ body {
     font-weight: bold;
     max-width: 900px;
     margin: 20px auto;
-    padding: 0 20px;
+    color: white;
 }
 @media only screen and (max-width: 799px) {
     .site-description {
@@ -96,15 +96,50 @@ body {
     }
 }
 
-.site-description span {
-    background-color: #fff;
-    box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
-}
 
-.event-details {
+#event-details {
+    max-width: 100%;
+    color: white;
+    padding: 20px 0;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04298e+0,04298e+53,87e0fd+100 */
+    background: #04298e; /* Old browsers */
+    background: -moz-linear-gradient(top, #04298e 0%, #04298e 53%, #87e0fd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #04298e 0%,#04298e 53%,#87e0fd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #04298e 0%,#04298e 53%,#87e0fd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04298e', endColorstr='#87e0fd',GradientType=0 ); /* IE6-9 */
+}
+.event-details_wrapper {
     max-width: 900px;
     margin: auto;
-    padding: 0 20px;
+    text-align: center;
+}
+
+input.event-registration-button {
+    background: #2d2994;
+    background-image: -webkit-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -moz-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -ms-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -o-linear-gradient(top, #2d2994, #2d2994);
+    background-image: linear-gradient(to bottom, #2d2994, #2d2994);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+input.event-registration-button:hover {
+    background: #2d2994;
+    background-image: -webkit-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -moz-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -ms-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -o-linear-gradient(top, #2d2994, #2d2994);
+    background-image: linear-gradient(to bottom, #2d2994, #2d2994);
+    text-decoration: none;
 }
 
 /*--------------------------------------------------------------
