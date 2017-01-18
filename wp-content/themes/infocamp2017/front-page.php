@@ -52,12 +52,12 @@ get_header(); ?>
                         <ul class="event-participate_list">
                             <li>
                                 <form action="<?php echo $twitter_url; ?>">
-                                    <input class="event-registration-button" type="submit" value="twitter" />
+                                    <button class="event-registration-button" type="submit" value="twitter" ><i class="fa fa-twitter" aria-hidden="true"></i></button>
                                 </form>
                             </li>
                             <li>
                                 <form action="<?php echo $facebook_url; ?>">
-                                    <input class="event-registration-button" type="submit" value="facebook" />
+                                    <button class="event-registration-button" type="submit" value="facebook" ><i class="fa fa-facebook" aria-hidden="true"></i></button>
                                 </form>
                             </li>
                         </ul>

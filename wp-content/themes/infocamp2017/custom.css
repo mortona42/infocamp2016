@@ -192,7 +192,27 @@ input.event-registration-button:hover {
 
 #event-participate {
     background-color: white;
+}
 
+.event-participate_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-participate_list li {
+    margin: 20px;
+}
+
+#event-participate .event-registration-button {
+    height: 250px;
+    width: 300px;
+
+    font-size: 5em;
+    background-color: white;
 }
 
 /*--------------------------------------------------------------
