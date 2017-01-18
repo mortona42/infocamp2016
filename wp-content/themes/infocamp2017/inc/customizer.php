@@ -133,6 +133,31 @@ function infocamp2017_customize_register( $wp_customize ) {
         'priority'  => 9,
     ) );
 
+    // Footer
+    $wp_customize->add_section( 'footer' , array(
+        'title'      => __( 'Footer', 'infocamp-2017' ),
+        'priority'   => 3,
+    ) );
+
+    $wp_customize->add_setting( 'footer_image', array('default' => '') );
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_image', array(
+        'label' => __( 'Footer image', 'infocamp-2017' ),
+        'section' => 'footer',
+        'mime_type' => 'image',
+        'flex_width'  => true, // Allow any width, making the specified value recommended. False by default.
+        'flex_height' => false, // Require the resulting image to be exactly as tall as the height attribute (default).
+        'width'       => 1920,
+        'height'      => 1080,
+        'priority'  => 1,
+    ) ) );
+
+    $wp_customize->add_setting( 'footer_copyright', array('default' => '') );
+    $wp_customize->add_control( 'footer_copyright', array(
+        'label'     => __( 'Footer copyright', 'infocamp-2017' ),
+        'section'   => 'footer',
+        'type'      => 'text',
+        'priority'  => 2,
+    ) );
 }
 add_action( 'customize_register', 'infocamp2017_customize_register' );
 

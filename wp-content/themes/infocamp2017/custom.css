@@ -3,7 +3,6 @@ body {
 }
 
 #primary {
-    margin-bottom: 50%;
 }
 
 /*--------------------------------------------------------------
@@ -216,10 +215,57 @@ input.event-registration-button:hover {
 }
 
 /*--------------------------------------------------------------
-# Content
+# Footer
 --------------------------------------------------------------*/
+footer#colophon {
+    height: 700px;
+}
 
-#content {
+.site-info {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+footer#colophon #footer_menu,
+footer#colophon .primary-menu {
+    float: left;
+    font-size: 14pt;
+}
+
+footer#colophon ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+}
+
+#footer_contact li {
+    font-size: 14pt;
+    display: inline-block;
+}
+
+#footer_menu a:link,
+#footer_menu a:visited,
+#footer_menu a:hover,
+#footer_menu a:active {
+    text-decoration: none;
+    color: #1E0D3E;
+}
+
+#footer_contact button {
+    color: white;
+    font-size: 14pt;
+    background-color: rebeccapurple;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    border: none;
+}
+
+#copyright {
+    clear: both;
+    padding-top: 20px;
 }
 
 /*--------------------------------------------------------------

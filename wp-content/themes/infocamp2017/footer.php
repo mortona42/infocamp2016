@@ -13,8 +13,49 @@
 
 	</div><!-- #content -->
 
+    <?php
+    $footer_image = wp_get_attachment_image_src( get_theme_mod( 'footer_image' ), 'original' );
+    $footer_image = $footer_image[0];
+    ?>
+    <style type="text/css">
+        footer#colophon {
+            background: url('<?php echo $footer_image ?>') no-repeat bottom;
+            background-size: cover;
+        }
+    </style>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
+            <div id="footer_menu">
+                <span>More</span>
+                <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+            </div>
+
+            <div id="footer_contact">
+                <span>Contact</span>
+                <ul>
+                    <li>
+                        <form action="<?php echo $twitter_url; ?>">
+                            <button class="" type="submit" value="twitter" ><i class="fa fa-twitter" aria-hidden="true"></i></button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="<?php echo $facebook_url; ?>">
+                            <button class="" type="submit" value="facebook" ><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="<?php echo $facebook_url; ?>">
+                            <button class="" type="submit" value="facebook" ><i class="fa fa-envelope" aria-hidden="true"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+            <?php
+            $footer_copyright = get_theme_mod( 'footer_copyright' );
+            ?>
+            <p id="copyright"><?php echo $footer_copyright; ?></p>
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
