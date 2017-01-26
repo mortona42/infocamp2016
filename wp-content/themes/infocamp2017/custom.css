@@ -124,11 +124,11 @@ body {
     color: white;
     padding: 20px 0;
 
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#051e29+0,04298e+100,144b64+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#051e29+0,144b64+100 */
     background: #051e29; /* Old browsers */
-    background: -moz-linear-gradient(top, #051e29 0%, #04298e 100%, #144b64 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #051e29 0%,#04298e 100%,#144b64 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #051e29 0%,#04298e 100%,#144b64 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, #051e29 0%, #144b64 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #051e29 0%,#144b64 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #051e29 0%,#144b64 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#051e29', endColorstr='#144b64',GradientType=0 ); /* IE6-9 */
 }
 .event-details_wrapper {
