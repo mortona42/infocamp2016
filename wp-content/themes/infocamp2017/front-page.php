@@ -42,25 +42,24 @@ get_header(); ?>
                 $participate_copy = get_theme_mod( 'participate_copy' );
 
                 $twitter_url = get_theme_mod( 'twitter_url' );
+                $twitter_button = get_theme_mod( 'twitter_button' );
                 $facebook_url = get_theme_mod( 'facebook_url' );
+                $facebook_button = get_theme_mod( 'facebook_button' );
                 ?>
                 <section id="event-participate">
                     <div class="front-page-section_wrapper">
                         <h2><?php echo $participate_header; ?></h2>
                         <p><?php echo $participate_copy; ?></p>
 
-                        <ul class="event-participate_list">
-                            <li>
-                                <form action="<?php echo $twitter_url; ?>">
-                                    <button class="event-registration-button" type="submit" value="twitter" ><i class="fa fa-twitter" aria-hidden="true"></i></button>
-                                </form>
-                            </li>
-                            <li>
-                                <form action="<?php echo $facebook_url; ?>">
-                                    <button class="event-registration-button" type="submit" value="facebook" ><i class="fa fa-facebook" aria-hidden="true"></i></button>
-                                </form>
-                            </li>
-                        </ul>
+                            <a class="button-link" href="<?php echo $twitter_url; ?>">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span><?php echo $twitter_button; ?></span>
+                            </a>
+
+                            <a class="button-link" href="<?php echo $facebook_url; ?>">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <span><?php echo $facebook_button; ?></span>
+                            </a>
                     </div>
                 </section>
 
