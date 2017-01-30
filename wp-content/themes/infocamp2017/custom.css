@@ -255,9 +255,15 @@ footer#colophon {
 }
 
 footer#colophon #footer_menu,
-footer#colophon .primary-menu {
+footer#colophon .primary-menu,
+footer#colophon #footer_contact {
     float: left;
     font-size: 14pt;
+    width: 200px;
+}
+
+footer#colophon h3 {
+    margin-bottom: .5em;
 }
 
 footer#colophon ul {
@@ -283,11 +289,13 @@ footer#colophon ul {
 #footer_contact button {
     color: white;
     font-size: 14pt;
-    background-color: rebeccapurple;
-    height: 50px;
-    width: 60px;
+    background-color: #1E0D3E;
+    height: 32px;
+    width: 32px;
     text-align: center;
     border: none;
+    padding: 0;
+    margin: 6px 14px 0 0;
 }
 
 #copyright {
