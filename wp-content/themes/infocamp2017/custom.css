@@ -3,9 +3,6 @@ body {
 }
 
 #primary {
-    background: #b1dcf0;
-    padding: 15px 30px;
-    margin-bottom: 50%;
 }
 
 /*--------------------------------------------------------------
@@ -112,8 +109,8 @@ body {
     font-size: 1.9em;
     font-weight: bold;
     max-width: 900px;
-    margin: 20px auto;
-    padding: 0 20px;
+    margin: 60px auto;
+    color: white;
 }
 @media only screen and (max-width: 799px) {
     .site-description {
@@ -121,25 +118,198 @@ body {
     }
 }
 
-.site-description span {
-    background-color: #fff;
-    box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
-}
 
-.event-details {
+#event-details {
+    max-width: 100%;
+    color: white;
+    padding: 20px 0;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#051e29+0,144b64+100 */
+    background: #051e29; /* Old browsers */
+    background: -moz-linear-gradient(top, #051e29 0%, #144b64 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #051e29 0%,#144b64 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #051e29 0%,#144b64 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#051e29', endColorstr='#144b64',GradientType=0 ); /* IE6-9 */
+}
+.event-details_wrapper {
     max-width: 900px;
     margin: auto;
-    padding: 0 20px;
+    text-align: center;
+}
+
+input.event-registration-button {
+    background: #2d2994;
+    background-image: -webkit-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -moz-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -ms-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -o-linear-gradient(top, #2d2994, #2d2994);
+    background-image: linear-gradient(to bottom, #2d2994, #2d2994);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+input.event-registration-button:hover {
+    background: #2d2994;
+    background-image: -webkit-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -moz-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -ms-linear-gradient(top, #2d2994, #2d2994);
+    background-image: -o-linear-gradient(top, #2d2994, #2d2994);
+    background-image: linear-gradient(to bottom, #2d2994, #2d2994);
+    text-decoration: none;
 }
 
 /*--------------------------------------------------------------
-# Content
+# Event Copy
 --------------------------------------------------------------*/
-
-#content {
-    max-width: 800px;
+#front-page-sections section {
+    padding: 60px 0;
+}
+#front-page-sections .front-page-section_wrapper {
+    max-width: 900px;
     margin: auto;
-    padding: 0 20px;
+}
+@media only screen and (max-width: 900px) {
+    #front-page-sections .front-page-section_wrapper {
+        margin: 0 20px;
+    }
+}
+
+#event-theme {
+    text-align: center;
+    background-color: white;
+}
+
+#event-about {
+    color: white;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e667f+0,558fa9+100 */
+    background: #2e667f; /* Old browsers */
+    background: -moz-linear-gradient(top, #2e667f 0%, #558fa9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #2e667f 0%,#558fa9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #2e667f 0%,#558fa9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e667f', endColorstr='#558fa9',GradientType=0 ); /* IE6-9 */
+}
+
+#event-about h2 {
+    color: white;
+}
+
+#event-participate {
+    background-color: white;
+}
+
+#button-wrapper {
+    text-align: center;
+}
+
+.button-link {
+    display: inline-block;
+}
+
+.button-link a:link,
+.button-link a:visited,
+.button-link a:hover,
+.button-link a:active {
+    color: #4A4A4A;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+
+.button-link i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.button-link span {
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer#colophon {
+    height: 700px;
+    padding-top: 60px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#94cfea+0,b2dcef+100 */
+    background: #94cfea; /* Old browsers */
+    background: -moz-linear-gradient(top, #94cfea 0%, #b2dcef 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #94cfea 0%,#b2dcef 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #94cfea 0%,#b2dcef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94cfea', endColorstr='#b2dcef',GradientType=0 ); /* IE6-9 */
+}
+
+.site-info {
+    max-width: 900px;
+    margin: auto;
+}
+
+footer#colophon #footer_menu,
+footer#colophon .primary-menu,
+footer#colophon #footer_contact {
+    float: left;
+    font-size: 14pt;
+    width: 200px;
+}
+
+footer#colophon h3 {
+    margin-bottom: .5em;
+}
+
+footer#colophon ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+}
+
+#footer_contact li {
+    font-size: 14pt;
+    display: inline-block;
+}
+
+#footer_menu a:link,
+#footer_menu a:visited,
+#footer_menu a:hover,
+#footer_menu a:active {
+    text-decoration: none;
+    color: #1E0D3E;
+}
+
+#footer_contact button {
+    color: white;
+    font-size: 14pt;
+    background-color: #1E0D3E;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    border: none;
+    padding: 0;
+    margin: 6px 14px 0 0;
+}
+
+#copyright {
+    clear: both;
+    padding-top: 20px;
+}
+@media only screen and (max-width: 900px) {
+    .site-info {
+        margin: 0 20px;
+    }
 }
 
 /*--------------------------------------------------------------
