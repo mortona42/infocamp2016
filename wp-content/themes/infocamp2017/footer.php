@@ -26,12 +26,12 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
             <div id="footer_menu">
-                <span>More</span>
-                <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+                <h3>More</h3>
+                <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu-footer' ) ); ?>
             </div>
 
             <div id="footer_contact">
-                <span>Contact</span>
+                <h3>Contact</h3>
                 <ul>
                     <li>
                         <form action="<?php echo $twitter_url; ?>">
