@@ -51,15 +51,21 @@ get_header(); ?>
                         <h2><?php echo $participate_header; ?></h2>
                         <p><?php echo $participate_copy; ?></p>
 
-                            <a class="button-link" href="<?php echo $twitter_url; ?>">
+                        <div id="button-wrapper">
+
+                            <div class="button-link">
+                            <a  href="<?php echo $twitter_url; ?>">
                                 <i class="fa fa-twitter" aria-hidden="true"></i>
                                 <span><?php echo $twitter_button; ?></span>
                             </a>
+                            </div>
 
-                            <a class="button-link" href="<?php echo $facebook_url; ?>">
+                            <div class="button-link">
+                            <a  href="<?php echo $facebook_url; ?>">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                                 <span><?php echo $facebook_button; ?></span>
                             </a>
+                            </div>
                     </div>
                 </section>
 

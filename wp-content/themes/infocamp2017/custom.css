@@ -204,48 +204,38 @@ input.event-registration-button:hover {
     background-color: white;
 }
 
-a:link.button-link ,
-a:visited.button-link ,
-a:hover.button-link ,
-a:active.button-link  {
+#button-wrapper {
+    text-align: center;
+}
+
+.button-link {
+    display: inline-block;
+}
+
+.button-link a:link,
+.button-link a:visited,
+.button-link a:hover,
+.button-link a:active {
     color: #4A4A4A;
     border: 1px solid #4A4A4A;
     border-radius: 5px;
     padding: 5px 10px;
     text-decoration: none;
-    display: inline-block;
     text-align: center;
+    display: block;
+    font-size: 1.5em;
+    margin: 10px;
 }
 
+
 .button-link i {
-    vertical-align: middle;
     font-size: 1.5em;
-    margin-right: 20px;
-    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .button-link span {
-    display: inline-block;
-}
-
-
-@media only screen and (max-width: 230px) {
-    a.button-link {
-        max-width: 90%;
-    }
-}
-
-@media only screen and (min-width: 231px) and (max-width: 500px) {
-    a.button-link  {
-        width: 90%;
-    }
-}
-
-@media only screen and (min-width: 501px) {
-    a.button-link {
-        width: 40%;
-        font-size: 1.5em;
-    }
+    vertical-align: middle;
 }
 
 /*--------------------------------------------------------------
