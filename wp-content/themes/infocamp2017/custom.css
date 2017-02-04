@@ -269,7 +269,7 @@ input.event-registration-button:hover {
 # Footer
 --------------------------------------------------------------*/
 footer#colophon {
-    height: 700px;
+    height: 500px;
     padding-top: 60px;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#94cfea+0,b2dcef+100 */
@@ -278,6 +278,7 @@ footer#colophon {
     background: -webkit-linear-gradient(top, #94cfea 0%,#b2dcef 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #94cfea 0%,#b2dcef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94cfea', endColorstr='#b2dcef',GradientType=0 ); /* IE6-9 */
+    background-size: 100%;
 }
 
 .site-info {
