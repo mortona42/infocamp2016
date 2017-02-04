@@ -45,9 +45,7 @@ body {
     margin-right: -9px;
 }
 
-.main-navigation li {
-    margin-left: 10px;
-}
+
 .main-navigation a:link,
 .main-navigation a:visited,
 .main-navigation a:hover,
@@ -55,9 +53,30 @@ body {
     text-decoration: none;
     color: #1E0D3E;
 }
+
+@media only screen and (min-width: 800px) {
+
+    #menu-wrapper {
+        margin-top: 11px;
+    }
+
+    .main-navigation li {
+        margin-left: 1.7em;
+    }
+}
+
 @media only screen and (min-width: 600px) and (max-width: 799px) {
+
+    #menu-wrapper {
+        margin-top: 6px;
+    }
+
     .site-title {
         font-size: 1.5em;
+    }
+
+    .main-navigation li {
+        margin-left: 1.3em;
     }
 }
 
