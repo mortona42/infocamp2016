@@ -170,29 +170,23 @@ article.page {
 }
 
 input.event-registration-button {
-    background: #2d2994;
-    background-image: -webkit-linear-gradient(top, #2d2994, #2d2994);
-    background-image: -moz-linear-gradient(top, #2d2994, #2d2994);
-    background-image: -ms-linear-gradient(top, #2d2994, #2d2994);
-    background-image: -o-linear-gradient(top, #2d2994, #2d2994);
-    background-image: linear-gradient(to bottom, #2d2994, #2d2994);
+    background: #1E0D3E;
+    background-image: none;
     -webkit-border-radius: 6;
     -moz-border-radius: 6;
     border-radius: 6px;
-    font-family: Arial;
+    border: 1px solid #fff;
+    font-family: 'Roboto Slab', serif;
     color: #ffffff;
     font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    padding: 15px 40px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 input.event-registration-button:hover {
-    background: #2d2994;
-    background-image: -webkit-linear-gradient(top, #2d2994, #2d2994);
-    background-image: -moz-linear-gradient(top, #2d2994, #2d2994);
-    background-image: -ms-linear-gradient(top, #2d2994, #2d2994);
-    background-image: -o-linear-gradient(top, #2d2994, #2d2994);
-    background-image: linear-gradient(to bottom, #2d2994, #2d2994);
+    background: #102556;
+    background-image: none;
     text-decoration: none;
 }
 
