@@ -20,7 +20,7 @@
     <style type="text/css">
         footer#colophon {
             background: url('<?php echo $footer_image ?>') no-repeat bottom;
-            background-size: cover;
+            background-size: 100%;
         }
     </style>
 	<footer id="colophon" class="site-footer" role="contentinfo">

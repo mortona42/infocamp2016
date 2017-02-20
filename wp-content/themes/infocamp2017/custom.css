@@ -304,7 +304,7 @@ input.event-registration-button:hover {
 --------------------------------------------------------------*/
 footer#colophon {
     height: 500px;
-    padding-top: 60px;
+    padding-top: 30px;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#94cfea+0,b2dcef+100 */
     background: #94cfea; /* Old browsers */
@@ -312,7 +312,7 @@ footer#colophon {
     background: -webkit-linear-gradient(top, #94cfea 0%,#b2dcef 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #94cfea 0%,#b2dcef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94cfea', endColorstr='#b2dcef',GradientType=0 ); /* IE6-9 */
-    background-size: 100%;
+    background-size: 100% !important;
 }
 
 .site-info {
@@ -337,11 +337,17 @@ footer#colophon ul {
     margin: 0;
     padding: 0;
     margin-right: 40px;
+    font-family: 'Roboto Slab', serif;
 }
 
 #footer_contact li {
     font-size: 14pt;
     display: inline-block;
+}
+
+#footer_menu li {
+    line-height: 1.8;
+    font-size: 13pt;
 }
 
 #footer_menu a:link,
@@ -366,7 +372,8 @@ footer#colophon ul {
 
 #copyright {
     clear: both;
-    padding-top: 20px;
+    padding-top: 2em;
+    font-size: .85em;
 }
 @media only screen and (max-width: 900px) {
     .site-info {
