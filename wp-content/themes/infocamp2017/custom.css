@@ -208,7 +208,7 @@ input.event-registration-button:hover {
 # Event Copy
 --------------------------------------------------------------*/
 #front-page-sections section {
-    padding: 60px 0;
+    padding: 50px 0;
 }
 #front-page-sections .front-page-section_wrapper {
     max-width: 900px;
@@ -222,7 +222,27 @@ input.event-registration-button:hover {
 
 #event-theme {
     text-align: center;
-    background-color: white;
+    background-color: #fff;
+}
+
+#event-theme h2 {
+    margin-bottom: 0;
+}
+
+#event-theme h2 strong {
+    font-size: 40px;
+    margin: 0;
+}
+
+#event-theme h2 strong span {
+    font-weight: normal;
+}
+
+#event-theme p {
+    font-size: 1.2em;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #event-about {

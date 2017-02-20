@@ -20,8 +20,10 @@ get_header(); ?>
                 ?>
                 <section id="event-theme">
                     <div class="front-page-section_wrapper">
-                        <h2><?php echo $theme_header; ?></h2>
-                        <h3>&mdash;<?php echo $theme; ?>&mdash;</h3>
+                        <h2><?php echo $theme_header; ?>
+                            <br />
+                            <strong><span>&mdash;</span> <?php echo $theme; ?> <span>&mdash;</span></strong>
+                        </h2>
                         <p><?php echo $theme_copy; ?></p>
                     </div>
                 </section>
