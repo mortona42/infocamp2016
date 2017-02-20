@@ -141,7 +141,7 @@ article.page {
     font-size: 1.9em;
     font-weight: bold;
     max-width: 900px;
-    margin: 60px auto;
+    margin: 55px auto 25px auto;
     color: white;
 }
 @media only screen and (max-width: 799px) {
@@ -167,6 +167,20 @@ article.page {
     max-width: 900px;
     margin: auto;
     text-align: center;
+}
+
+#event-date {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1em;
+}
+
+#event-location {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1em;
+}
+
+#event-registration {
+    margin-bottom: 35px;
 }
 
 input.event-registration-button {
