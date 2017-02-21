@@ -54,6 +54,14 @@ body {
     color: #1E0D3E;
 }
 
+#menu-wrapper {
+    font-family: 'Roboto Slab', serif;
+}
+
+#menu-wrapper a:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (min-width: 800px) {
 
     #menu-wrapper {
@@ -356,6 +364,10 @@ footer#colophon ul {
 #footer_menu a:active {
     text-decoration: none;
     color: #1E0D3E;
+}
+
+#footer_menu a:hover {
+    text-decoration: underline;
 }
 
 #footer_contact button {
