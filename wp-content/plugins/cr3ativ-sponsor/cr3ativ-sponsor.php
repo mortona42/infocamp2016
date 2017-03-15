@@ -5,7 +5,7 @@
  * Description: Custom written plugin for your sponsor needs on your WordPress site.
  * Author: Jonathan Atkinson
  * Author URI: http://cr3ativ.com/
- * Version: 1.2.0
+ * Version: 1.2.1
  */
 
 /* Place custom code below this line. */
@@ -215,19 +215,20 @@ function sponsor_level_cat_func($atts, $content) {
             'bio'      => 'yes',
             'show'      => '',
             'orderby'      => '',
+            'order'     =>  '',
             'category'      => ''
             ), $atts));
 
     global $post;
-    
 
     if( $category == ('') ) { $category = 'all';} else { };
     if( $orderby == ('') ) { $orderby = 'rand';} else { };
-    if( $category != ('all') ) {      
+    if( $order == ('') ) { $order = 'asc';} else { };
+    if( $category != ('all') ) {
 		$args = array(
 		'post_type' => 'cr3ativsponsor',
         'posts_per_page' => $show,
-        'order' => $orderby,
+        'order' => $order,
         'orderby' => $orderby,
         'tax_query' => array(
             array(
@@ -235,11 +236,11 @@ function sponsor_level_cat_func($atts, $content) {
                 'field' => 'slug',
                 'terms' => array( $category)
             )
-        )); 
+        ));
    } else {
 		$args = array(
 		'post_type' => 'cr3ativsponsor',
-        'order' => $orderby,
+        'order' => $order,
         'orderby' => $orderby,
         'posts_per_page' => $show
 		);

@@ -110,7 +110,8 @@ class cr3ativ_sponsor extends WP_Widget {
 global $post; 
         
     if( $cr3ativsponsor_level == ('none') ) { $cr3ativsponsor_level = 'all';} else { };
-    if( $orderby == ('none') ) { $orderby = 'rand';} else { };
+    if( $orderby == ('') ) { $orderby = 'rand';} else { };
+    if( $order == ('') ) { $order = 'asc';} else { };
     if( $cr3ativsponsor_level != ('all') ) {      
 		$args = array(
 		'post_type' => 'cr3ativsponsor',

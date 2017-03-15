@@ -2,8 +2,8 @@
 Contributors: Cr3ativ
 Tags: sponsors, events
 Requires at least: 3.0.1
-Tested up to: 4.4.1
-Stable tag: 1.2.0
+Tested up to: 4.7
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,20 +21,20 @@ Here is [the demo](http://mythemepreviews.com/plugins/sponsors/ "the demo").
 
 == Installation ==
 
-1. Upload the `cr3ativ-sponsor` folder to your to the `/wp-content/plugins/` directory or alternatively upload the cr3ativ-sponsor.zip via the plugin page of WordPress by clicking 'Add New' and select the zip from your local computer.
+1. Upload the 'cr3ativ-sponsor' folder to your to the ‘/wp-content/plugins/‘ directory or alternatively upload the cr3ativ-sponsor.zip via the plugin page of WordPress by clicking ‘Add New’ and select the zip from your local computer.
 
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
-3. You will see a new post type on the left of the WP admin menu ’Sponsor’.
+3. You will see a new post type on the left of the WP admin menu ‘Sponsor’.
 
 4. Under the ‘sponsor’ menu option, you will see ‘All Sponsors’, ‘Add New Sponsor’ and ‘Sponsor Levels’.  
 
 
 == Creating a Single Sponsor Listing ==
 
-1. Click ‘Add New Sponsor and enter all relevant information.  The title will be the Sponsor’s Name, the Featured Image would be sponsor’s logo, the content area would be the sponsor’s bio and the Company URL meta box would be the url to the sponsor’s website.
+1. Click ‘Add New Sponsor’ and enter all relevant information.  The title will be the Sponsor’s Name, the Featured Image would be sponsor’s logo, the content area would be the sponsor’s bio and the Company URL meta box would be the url to the sponsor’s website.
 
-2. On the right of the screen you will see a new box named ‘Sponsor level’ - this is used to categorize your sponsorships easily - an example being Platinum, Gold, Silver etc basically levels in your event for sponsorships - either choose an existing sponsor level or create a new one for it to be assigned by clicking ‘+Add New Category’.
+2. On the right of the screen you will see a new box named ‘Sponsor level’ - this is used to categorize your sponsorships easily - an example being Platinum, Gold, Silver etc basically levels in your event for sponsorships - either choose an existing sponsor level or create a new one for it to be assigned by clicking ‘Add New Category’.
 
 3. Click Publish.
 
@@ -45,7 +45,7 @@ Here is [the demo](http://mythemepreviews.com/plugins/sponsors/ "the demo").
 
 To display sponsors on any post or page using the text based short code, copy/paste this short code into the desired area and just change the information to what you want it to display.  For example:
 
-[sponsor_level category="all" orderby="DESC" columns="4" image="yes" title="yes" link="yes" bio="yes" show=“2”]
+[sponsor_level category="all" orderby="DESC" columns="4" image="yes" title="yes" link="yes" bio="yes" show="2"]
 
 The above short code will display all sponsors in DESC order as a 4 column layout with the featured image, sponsor name and the content.  The featured image and sponsor name will be linked.
 
@@ -57,11 +57,11 @@ category - this would be the sponsor level.  You would type in the ‘slug’ na
 
 orderby - type ‘asc’ to order by the sponsors by the first created (post date) - meaning the first sponsor you created will appear first, type ‘desc’ to order by last created (post date) - meaning the last sponsor you created will appear first, type ‘rand’ to order by random (each time the page refreshes the order will change) or type ‘menu_order’ if you have placed numerical values in the Page Attributes ‘Order’ to order specific to your needs.  If you choose ‘menu_order’, they numerical system will be desc meaning 5, 4, 3, 2, 1 order.
 
-columns - you can enter ‘1’, ‘2’, ‘3’ or ‘4’ here
+columns - you can enter 1, 2, 3 or 4 here
 
 image - enter ‘yes’ or ‘no’ to show the featured image
 
-title - enter ‘yes or ‘no’ to show the sponsor name
+title - enter ‘yes’ or ‘no’ to show the sponsor name
 
 link - enter ‘yes’ or ‘no’ to have the image and/or name linked with the url in the ‘Company URL’ field pulled from the sponsor page
 
@@ -76,7 +76,7 @@ The Cr3ativ Sponsor plugin comes not only with a useful widget to display sponso
 
 Title - Title that will appear above the widget
 
-orderby - choose ‘Asc’ to order by the sponsors by the first created (post date) - meaning the first sponsor you created will appear first, choose ‘Desc’ to order by last created (post date) - meaning the last sponsor you created will appear first, choose ‘Random’ to order by random (each time the page refreshes the order will change) or choose ‘Page Attributes "Order"’ if you have placed numerical values in the Page Attributes ‘Order’ to order specific to your needs.  If you choose ‘Page Attributes "Order”, they numerical system will be desc meaning 5, 4, 3, 2, 1 order.
+orderby - choose ‘Asc’ to order by the sponsors by the first created (post date) - meaning the first sponsor you created will appear first, choose ‘Desc’ to order by last created (post date) - meaning the last sponsor you created will appear first, choose ‘Random’ to order by random (each time the page refreshes the order will change) or choose Page Attributes "Order" if you have placed numerical values in the Page Attributes ‘Order’ to order specific to your needs.  If you choose Page Attributes “Order”, they numerical system will be desc meaning 5, 4, 3, 2, 1 order.
 
 How many to show? - Enter # of sponsors you would like to show.  Enter something like 999999 to show all.
 
@@ -109,6 +109,9 @@ Styling for these page templates are included in the includes directory under :
 
 
 == Changelog ==
+
+= 1.2.1 =
+* Updated cr3ativ-sponsor.php to change default sorting method of the shortcode.
 
 = 1.2.0 =
 * Updated sponsor-widget.php, cr3ativ-sponsor.php and /includes/css/cr3ativsponsor.css to correct issue with Google’s AdBlock blocking the images and info by replacing the div class names to add a prefix in front of each class and id.  Also added an attribute to the shortcode and widget to allow users to specify how many to show.  Enter 999999 to show all sponsors for that category.
