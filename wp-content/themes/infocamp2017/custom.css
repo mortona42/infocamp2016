@@ -219,7 +219,6 @@ article.page ul {
 #event-details {
     max-width: 100%;
     color: white;
-    padding: 20px 0;
     position: relative;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#051e29+0,144b64+100 */
@@ -231,21 +230,14 @@ article.page ul {
 
 }
 
-#event-details:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    background: url("images/hp-bg.png") repeat center center;
-}
 
 .event-details_wrapper {
-    max-width: 900px;
+  /*  max-width: 900px; */
     margin: auto;
     text-align: center;
+    background: url("images/hp-bg.png") repeat center center;
+    padding: 20px 0;
+    background-attachment: fixed;
 }
 
 #event-date {
