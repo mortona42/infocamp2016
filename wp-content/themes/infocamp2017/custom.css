@@ -316,7 +316,7 @@ input.event-registration-button:hover {
     margin-right: auto;
 }
 
-#event-about {
+.event-wrapper {
     color: white;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e667f+0,558fa9+100 */
@@ -327,16 +327,21 @@ input.event-registration-button:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e667f', endColorstr='#558fa9',GradientType=0 ); /* IE6-9 */
 }
 
-#event-about h2 {
+.event-wrapper h2 {
     color: white;
 }
 
-#event-participate {
-    background-color: white;
+#front-page-sections section#event-about {
+    padding-bottom: 1em;
+}
+
+#front-page-sections section#event-participate {
+    padding-top: 0;
 }
 
 #button-wrapper {
     text-align: center;
+    margin-top: 2em;
 }
 
 .button-link {
@@ -369,6 +374,44 @@ input.event-registration-button:hover {
     vertical-align: middle;
     font-family: 'Roboto Slab', serif;
 }
+
+#front-page-sections .button-link a:link,
+#front-page-sections .button-link a:visited,
+#front-page-sections .button-link a:hover,
+#front-page-sections .button-link a:active {
+    color: #fff;
+    border-color: #fff;
+}
+
+#event-sponsors {
+    background-color: #fff;
+}
+
+.sponsor-row {
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+.sponsor-row img {
+    vertical-align: middle;
+}
+
+.sponsor-row.inkind {
+    margin-bottom: 0px;
+}
+
+.sponsor-row.inkind a {
+    display: inline-block;
+    margin: 1em 2em;
+    max-width: 218px;
+}
+
+.sponsor-row.inkind img {
+    height: auto;
+    width: 100%;
+}
+
+
 
 /*--------------------------------------------------------------
 # Footer
